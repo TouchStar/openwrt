@@ -674,6 +674,10 @@ tl-wr2543n)
 	ucidef_set_led_usbdev "usb" "USB" "tp-link:green:usb" "1-1"
 	;;
 
+ts-nav4)
+	ucidef_set_led_default "power" "System Power" "ts-nav4:system" "1"	
+	;;
+
 tube2h)
 	ucidef_set_led_netdev "lan" "LAN" "alfa:blue:lan" "eth0"
 	ucidef_set_rssimon "wlan0" "40000" "1"

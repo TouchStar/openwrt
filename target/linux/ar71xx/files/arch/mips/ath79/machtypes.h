@@ -209,6 +209,7 @@ enum ath79_mach_type {
 	ATH79_MACH_TL_WR941ND,		/* TP-LINK TL-WR941ND */
 	ATH79_MACH_TL_WR941ND_V5,	/* TP-LINK TL-WR941ND v5 */
 	ATH79_MACH_TL_WR941ND_V6,	/* TP-LINK TL-WR941ND v6 */
+	ATH79_MACH_TS_NAV4,			/* TouchStar TS-NAV4 */
 	ATH79_MACH_TUBE2H,		/* Alfa Network Tube2H */
 	ATH79_MACH_UBNT_AIRGW,		/* Ubiquiti AirGateway */
 	ATH79_MACH_UBNT_AIRGWP,		/* Ubiquiti AirGateway Pro */
