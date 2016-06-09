@@ -1,0 +1,2 @@
+usbserial
+usbserial vendor=0x1e2d product=0x0053  	# Cinterion PHxx,PXxx
