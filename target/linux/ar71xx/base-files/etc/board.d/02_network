@@ -369,7 +369,6 @@ tl-wa901nd-v2 |\
 tl-wa901nd-v3 |\
 tl-wa901nd-v4 |\
 tl-wr703n |\
-ts-nav4 |\
 tube2h |\
 unifiac-lite |\
 wndap360 |\
@@ -380,6 +379,11 @@ wp543)
 
 cap324)
 	ucidef_set_interface_lan "eth0" "dhcp"
+	;;
+
+ts-nav4)
+	ucidef_set_interface_lan "eth0"
+	ucidef_set_interface_raw "ts" "eth1" "dhcp"
 	;;
 
 arduino-yun |\

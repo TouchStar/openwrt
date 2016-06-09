@@ -1,0 +1,14 @@
+#!/bin/sh
+
+. /lib/ar71xx.sh
+  
+board=$(ar71xx_board_name)
+  
+case "$board" in
+ts-nav4)
+	uci set wireless.@wifi-iface[0].ssid='NAVEGATE4'
+  	uci set wireless.@wifi-device[0].disabled=0
+  	uci commit wireless
+  	wifi
+  	;;
+ esac
