@@ -16,6 +16,7 @@ ts-nav4)
   	uci set network.wan.device='/dev/ttyUSB3'
   	uci set network.wan.service='umts'
   	uci set network.wan.apn='telstra.internet'
+    uci delete network.ts6
   	uci commit network
   	;;
  esac
