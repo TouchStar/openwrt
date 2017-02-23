@@ -1633,6 +1633,16 @@ config ATH79_MACH_TEW_823DRU
 	select ATH79_DEV_USB
 	select ATH79_DEV_WMAC
 
+config ATH79_MACH_TS_VH401
+	bool "TS VH401 support"
+	select SOC_AR933X
+	select ATH79_DEV_ETH
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_M25P80
+	select ATH79_DEV_USB
+	select ATH79_DEV_WMAC	
+
 config ATH79_MACH_UBNT
 	bool "Ubiquiti AR71xx based boards support"
 	select SOC_AR71XX
