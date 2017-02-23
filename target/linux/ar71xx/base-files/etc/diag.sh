@@ -456,6 +456,9 @@ get_status_led() {
 	wlr8100)
 		status_led="sitecom:amber:status"
 		;;
+	ts-vh401)
+  		status_led="ts-vh401:system"
+  		;;
 	esac
 }
 
