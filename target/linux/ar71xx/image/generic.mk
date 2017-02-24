@@ -525,12 +525,13 @@ endef
 TARGET_DEVICES += oolite
 
 define Device/ts-vh401
+  DEVICE_TITLE := TouchStar VH401
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2
   BOARDNAME = TS-VH401
   IMAGE_SIZE = 16000k
   CONSOLE = ttyATH0,115200
   MTDPARTS = spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)
 endef
-
 TARGET_DEVICES += ts-vh401
 
 define Device/NBG6616
