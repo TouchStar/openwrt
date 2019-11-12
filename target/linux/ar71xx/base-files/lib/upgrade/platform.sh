@@ -269,6 +269,7 @@ platform_check_image() {
 	tew-732br|\
 	tew-823dru|\
 	ts-vh401|\
+	ts-vh501|\
 	unifi-outdoor|\
 	unifiac-lite|\
 	unifiac-pro|\
