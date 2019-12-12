@@ -30,7 +30,7 @@
 #ifdef FAKE_TPLINK
 #define TS_VH501_GPIO_PIN_USBPOWER      	8		// Just to get working on TPLink.
 #endif
-#define TS_VH501_GPIO_BTN_RESET	   	   		11
+#define TS_VH501_GPIO_BTN_RESET	   	   		12
 #define TS_VH501_GPIO_CELLULAR_RESET   		14
 
 #define TS_VH501_GPIO_CELLULAR_CINTERION_PH8_POWERON_PERIOD		150		// Per specification (>3.001 firmware) must be >100ms
@@ -60,7 +60,7 @@ static struct gpio_keys_button ts_VH501_gpio_keys[] __initdata = {
 		.code = KEY_RESTART,
 		.debounce_interval = TS_VH501_KEYS_DEBOUNCE_INTERVAL,
 		.gpio = TS_VH501_GPIO_BTN_RESET,
-		.active_low = 1,
+		.active_low = 0,
 	},
 };
 
@@ -68,7 +68,7 @@ static void __init ts_vh501_setup(void)
 {
 	/* ART(cal_data) base address */
 	u8 *art = (u8 *) KSEG1ADDR(TS_VH501_ART_DATA_ADDR);
-	
+
 	/* register flash. */
 	ath79_register_m25p80(NULL);
 	ath79_register_wmac(art + TS_VH501_CALDATA_OFFSET,
@@ -101,8 +101,6 @@ static void __init ts_vh501_setup(void)
 			 "Cellular Reset");
 
 		// Pulse the modem for initial power-on.
-	gpio_set_value(TS_VH501_GPIO_CELLULAR_RESET, 0);
-	mdelay(TS_VH501_GPIO_CELLULAR_CINTERION_PH8_POWERON_PERIOD);
 	gpio_set_value(TS_VH501_GPIO_CELLULAR_RESET, 1);
 
 #ifdef FAKE_TPLINK	
