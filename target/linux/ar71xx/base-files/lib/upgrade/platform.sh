@@ -301,6 +301,7 @@ platform_check_image() {
 	tew-823dru|\
 	tl-wr1043n-v5|\
 	tl-wr942n-v1|\
+	ts-vh401|\
 	unifi|\
 	unifi-outdoor|\
 	unifiac-lite|\
