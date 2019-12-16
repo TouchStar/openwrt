@@ -488,6 +488,10 @@ get_status_led() {
 	tl-wdr6500-v2)
 		status_led="tp-link:white:system"
 		;;
+	ts-vh401|\
+	ts-vh501)
+		status_led="$board:system"
+		;;
 	tube2h)
 		status_led="alfa:green:signal4"
 		;;
@@ -552,9 +556,6 @@ get_status_led() {
 		;;
 	wlr8100)
 		status_led="sitecom:amber:status"
-		;;
-	ts-vh401)
-		status_led="ts-vh401:system"
 		;;
 	esac
 }

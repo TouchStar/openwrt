@@ -1367,6 +1367,9 @@ ar71xx_board_detect() {
 	*"TOUCHSTAR VH401")
 		name="ts-vh401"
 		;;
+	*"TOUCHSTAR VH501")
+		name="ts-vh501"
+		;;
 	*"Tube2H")
 		name="tube2h"
 		;;

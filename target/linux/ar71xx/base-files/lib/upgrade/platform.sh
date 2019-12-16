@@ -302,6 +302,7 @@ platform_check_image() {
 	tl-wr1043n-v5|\
 	tl-wr942n-v1|\
 	ts-vh401|\
+	ts-vh501|\
 	unifi|\
 	unifi-outdoor|\
 	unifiac-lite|\

@@ -1088,6 +1088,16 @@ define Device/ts-vh401
 endef
 TARGET_DEVICES += ts-vh401
 
+define Device/ts-vh501
+  DEVICE_TITLE := TouchStar VH501
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2
+  BOARDNAME = TS-VH501
+  IMAGE_SIZE = 16000k
+  CONSOLE = ttyATH0,115200
+  MTDPARTS = spi0.0:256k(u-boot)ro,64k(u-boot-env),16000k(firmware),64k(art)
+endef
+TARGET_DEVICES += ts-vh501
+
 define Device/NBG6616
   DEVICE_TITLE := ZyXEL NBG6616
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ledtrig-usbport kmod-usb-storage kmod-rtc-pcf8563 kmod-ath10k ath10k-firmware-qca988x
